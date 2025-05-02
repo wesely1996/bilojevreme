@@ -1,0 +1,280 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ebe5e2;
+  color: #414f41;
+}
+
+.home-title {
+  font-weight: 400;
+  font-size: 7rem;
+  font-family: "Hatton";
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 14px;
+}
+
+.home-subtitle {
+  font-size: 5rem;
+  font-family: "Hatton";
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 14px;
+}
+
+@media (min-width: 550px) {
+  .home-subtitle {
+    font-size: 3rem;
+  }
+}
+
+.background-image {
+  z-index: -5;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.background-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.bm-10vh {
+  margin-bottom: 10vh;
+}
+
+.detail-card {
+  background-color: #ebe5e2;
+  box-shadow: 1em 1em 1em #bebab7be;
+  margin: 20px;
+  font-size: 1.1rem;
+  width: 370px;
+  margin: 1rem 1rem;
+  height: 35vh;
+  min-height: 300px;
+}
+
+.section-title {
+  font-size: 4rem;
+  font-weight: 500;
+  text-shadow: 0px 0px 10px #cac5b1;
+  font-family: "Great Vibes", cursive;
+  background: radial-gradient(ellipse at center, #ebe5e2, #ebe5e200);
+}
+
+#rsvp textarea {
+  background-color: #ebe5e2;
+}
+
+.form-card {
+  background-color: #ebe5e2;
+  box-shadow: 1em 1em 1em #bebab7be;
+  font-size: 1.1rem;
+  max-width: 550px;
+  margin: 1rem 1rem;
+}
+
+#home {
+  padding: 10vh 20% 10vh 20%;
+}
+
+.home-content {
+  background: radial-gradient(ellipse at center, #ebe5e291, #ebe5e200);
+}
+
+.home-content div {
+  background: radial-gradient(ellipse at center, #ebe5e2, #ebe5e200);
+}
+
+#detalji-vencanja {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: radial-gradient(ellipse at center, #ebe5e2, #ebe5e200);
+}
+
+.right-edge-decore {
+  height: 100%;
+  width: 30%;
+}
+
+.right-edge-decore img {
+  height: 100%;
+  width: 100%;
+}
+
+.left-edge-decore {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  width: 30%;
+}
+
+.left-edge-decore img {
+  height: 70%;
+  width: 70%;
+}
+
+.countdown-field {
+  padding: 22px;
+}
+
+.icon-button:hover img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.rsvp-form-input {
+  background-color: #ebe5e2;
+  border: none;
+  font-size: 1.1rem;
+  height: 28px;
+  color: black;
+}
+
+.rsvp-form-input:focus {
+  background-color: #ebe5e2;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  background-color: #ebe5e2;
+}
+
+.bg-navbar {
+  background: none;
+}
+
+.navbar-toggler {
+  background-color: none;
+}
+
+.nav-link {
+  color: #414f41;
+  background: radial-gradient(ellipse at center, #ebe5e2, #ebe5e22a);
+}
+
+@media screen and (max-width: 900px) {
+  .home-title {
+    font-size: 5.5rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .countdown {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .countdown-label {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .home-title {
+    font-size: 4.5rem;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+  }
+
+  .countdown {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .countdown-label {
+    font-size: 0.8rem;
+  }
+
+  .countdown-field {
+    padding: 10px;
+  }
+
+  .card-subtitle {
+    font-size: 22px;
+    padding: 5px;
+  }
+
+  .card-text {
+    font-size: 16px;
+  }
+
+  #detalji-vencanja {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  .home-title {
+    font-size: 3.4rem;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .countdown {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .countdown-label {
+    font-size: 0.8rem;
+  }
+
+  .countdown-field {
+    padding: 10px;
+  }
+
+  .card-subtitle {
+    font-size: 16px;
+    padding: 4px;
+  }
+
+  .card-text {
+    font-size: 11px;
+  }
+
+  #detalji-vencanja {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  button img {
+    width: 50px;
+  }
+
+  .page-section {
+    min-height: 400px;
+  }
+
+  .form-check-label {
+    font-size: 14px;
+  }
+
+  .rsvp-form-input {
+    font-size: 14px;
+  }
+
+  .detail-card {
+    min-height: 250px;
+  }
+}
