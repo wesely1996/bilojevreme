@@ -3,11 +3,11 @@ function checkOrientation() {
   const verticalImage = document.getElementById("vertical-bg");
 
   if (window.matchMedia("(orientation: portrait)").matches) {
-    horizontalImage.style.display = "none";
-    verticalImage.style.display = "block";
-  } else {
     horizontalImage.style.display = "block";
     verticalImage.style.display = "none";
+  } else {
+    horizontalImage.style.display = "none";
+    verticalImage.style.display = "block";
   }
 
   const weddingDetails = document.getElementById("detalji-vencanja");
@@ -20,8 +20,9 @@ function checkOrientation() {
   }
 }
 
-// Listen for orientation change events
-window.addEventListener("orientationchange", checkOrientation, false);
+window.addEventListener("DOMContentLoaded", checkOrientation);
+window.addEventListener("orientationchange", checkOrientation);
+window.addEventListener("resize", checkOrientation);
 
 $("a.nav-link").click(function () {
   const dropdown = document.getElementById("navbarNav");
