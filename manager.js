@@ -1,15 +1,16 @@
-function checkOrientation() {
+function switchFullBackgrounds() {
   const horizontalImage = document.getElementById("horizontal-bg");
   const verticalImage = document.getElementById("vertical-bg");
-
   if (window.matchMedia("(orientation: portrait)").matches) {
-    horizontalImage.style.display = "block";
-    verticalImage.style.display = "none";
+    horizontalImage.classList.add("block");
+    verticalImage.classList.add("hidden");
   } else {
-    horizontalImage.style.display = "none";
-    verticalImage.style.display = "block";
+    horizontalImage.classList.add("hidden");
+    verticalImage.classList.add("block");
   }
+}
 
+function weddingDetailsOrientation() {
   const weddingDetails = document.getElementById("detalji-vencanja");
   if (window.matchMedia("(orientation: portrait)").matches) {
     weddingDetails.classList.remove("flex-row");
@@ -18,6 +19,11 @@ function checkOrientation() {
     weddingDetails.classList.remove("flex-column");
     weddingDetails.classList.add("flex-row");
   }
+}
+
+function checkOrientation() {
+  // switchFullBackgrounds();
+  weddingDetailsOrientation();
 }
 
 window.addEventListener("DOMContentLoaded", checkOrientation);

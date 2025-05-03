@@ -7,10 +7,15 @@ body {
   color: #414f41;
 }
 
+.poiret-one {
+  font-family: "Poiret One", sans-serif;
+}
+
 .home-title {
   font-weight: 400;
   font-size: 7rem;
-  font-family: "Hatton";
+  font-family: "Italianno", cursive;
+  font-style: normal;
   text-transform: uppercase;
   line-height: 1.1;
   letter-spacing: 14px;
@@ -18,7 +23,7 @@ body {
 
 .home-subtitle {
   font-size: 5rem;
-  font-family: "Hatton";
+  font-family: "Poiret One", sans-serif;
   text-transform: uppercase;
   line-height: 1.1;
   letter-spacing: 14px;
@@ -33,16 +38,45 @@ body {
 .background-image {
   z-index: -5;
   position: fixed;
-  height: 100dvh;
-  width: 100dvw;
+  height: 100vh;
+  width: 100vw;
   left: 0;
   top: 0;
   overflow: hidden;
 }
 
 .background-image img {
-  height: 100dvh;
-  width: 100dvw;
+  /* height: 100vh;
+  width: 100vw; */
+  max-width: 50%;
+  max-height: 50%;
+}
+
+#top-left-corner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#top-right-corner-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(90deg);
+}
+
+#bottom-right-corner-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+#bottom-left-corner-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(-90deg);
 }
 
 .bm-10vh {
@@ -62,12 +96,12 @@ body {
   font-size: 4rem;
   font-weight: 500;
   text-shadow: 0px 0px 10px #cac5b1;
-  font-family: "Great Vibes", cursive;
+  font-family: "Italianno", cursive;
   background: radial-gradient(ellipse at center, #ebe5e2, #ebe5e200);
 }
 
 #rsvp textarea {
-  background-color: #ebe5e2;
+  background-color: none;
 }
 
 .form-card {
@@ -132,6 +166,7 @@ body {
 .rsvp-form-input {
   background-color: #ebe5e2;
   border: none;
+  border-bottom: 1px solid #414f41;
   font-size: 1.1rem;
   height: 28px;
   color: black;
@@ -275,4 +310,12 @@ body {
   .detail-card {
     min-height: 250px;
   }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.block {
+  display: block !important;
 }
