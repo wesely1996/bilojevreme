@@ -90,6 +90,7 @@ body {
   width: 370px;
   height: 35vh;
   min-height: 300px;
+  margin: 0;
 }
 
 .section-title {
@@ -125,6 +126,7 @@ body {
 }
 
 #detalji-vencanja {
+  min-height: 100vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
   margin-left: 20%;
@@ -318,4 +320,13 @@ body {
 
 .block {
   display: block !important;
+}
+
+.submit-btn {
+  box-shadow: 5px 5px 5px #bebab7be;
+}
+
+.submit-btn:hover {
+  box-shadow: 5px 5px 5px #bebab7;
+  text-shadow: #414f41 1px 1px 1px;
 }
