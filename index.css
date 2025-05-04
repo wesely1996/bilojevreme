@@ -319,3 +319,12 @@ body {
 .block {
   display: block !important;
 }
+
+.submit-btn {
+  box-shadow: 5px 5px 5px #bebab7be;
+}
+
+.submit-btn:hover {
+  box-shadow: 5px 5px 5px #bebab7;
+  text-shadow: #414f41 1px 1px 1px;
+}
