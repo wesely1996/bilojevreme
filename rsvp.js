@@ -14,7 +14,7 @@ form.addEventListener("submit", function (e) {
   const formData = new FormData(form);
 
   const plusOneToggle = document.getElementById("plusOneToggle");
-  const plusOneInputName = "entry.1802455363";
+  const plusOneInputName = "entry.246061222";
 
   if (!plusOneToggle.checked) {
     // Ensure empty string is added when +1 is not checked
@@ -22,7 +22,7 @@ form.addEventListener("submit", function (e) {
   }
 
   fetch(
-    "https://docs.google.com/forms/d/e/1FAIpQLSfICZDDls3usu_uMP37MfGgM7rq9Yty7ROEV2u8N6U8ec67mw/formResponse",
+    "https://docs.google.com/forms/d/e/1FAIpQLSc_YV21SuwzewvSu8ofkewmCXK6fL23N_LyLNrPZoIdzD8JMg/formResponse",
     {
       method: "POST",
       mode: "no-cors",
