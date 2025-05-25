@@ -207,6 +207,12 @@ body {
   max-width: 80vw;
 }
 
+.deadline-text {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
 @media screen and (max-width: 1200px) {
   .home-title {
     font-size: 6rem;
@@ -245,19 +251,6 @@ body {
     font-size: 1rem;
   }
 
-  .countdown {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-
-  .countdown-label {
-    font-size: 0.8rem;
-  }
-
-  .countdown-field {
-    padding: 10px;
-  }
-
   .card-subtitle {
     font-size: 22px;
     padding: 5px;
@@ -284,19 +277,6 @@ body {
 
   .section-title {
     font-size: 3rem;
-  }
-
-  .countdown {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-
-  .countdown-label {
-    font-size: 0.8rem;
-  }
-
-  .countdown-field {
-    padding: 10px;
   }
 
   .card-subtitle {
