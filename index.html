@@ -149,7 +149,8 @@
               Ako imate devojku, momka, muža, ženu - slobodno ih povedite kao +1
             </li>
             <li class="card-text poiret-one font-weight-bold text-justify">
-              Volimo vašu decu, ali neka ovo veče bude i odmor za vas
+              Volimo vašu decu, ali bismo voleli da ovaj dan provedete opušteno
+              - ako možete, organizujte veče bez mališana
             </li>
           </ul>
         </div>
@@ -165,10 +166,10 @@
             class="d-flex flex-column justify-content-center flex-start p-4 detail-card poiret-one font-weight-bold"
             id="rsvp-form"
           >
-            <div>
+            <div class="rsvp-form-input-container">
               <label>Ime i Prezime:</label>
               <input
-                class="rsvp-form-input"
+                class="rsvp-form-input main-guest-input"
                 name="entry.1958054597"
                 type="text"
                 required
@@ -178,11 +179,76 @@
               <input type="checkbox" id="plusOneToggle" />
               <label style="padding-left: 0.5rem; margin-bottom: 0">+1?</label>
             </div>
-            <div id="plusOneFields" style="display: none">
+            <div
+              id="plusOneFields"
+              class="rsvp-form-input-container"
+              style="display: none"
+            >
               <label>+1 Ime i Prezime:</label>
               <input
-                class="rsvp-form-input"
+                class="rsvp-form-input plus-one-name-input"
                 name="entry.246061222"
+                type="text"
+              />
+            </div>
+            <div class="d-flex flex-row flex-start">
+              <input type="checkbox" id="kidsToggle" />
+              <label style="padding-left: 0.5rem; margin-bottom: 0"
+                >Deca?</label
+              >
+            </div>
+            <div id="kidsNumber" style="display: none">
+              <label>Broj Dece:</label>
+              <input
+                id="kidsNumberInput"
+                class="rsvp-form-input"
+                name="entry.2142379312"
+                type="number"
+                min="0"
+                max="3"
+                value="0"
+                required
+              />
+            </div>
+            <label id="kidsLabel" style="display: none"
+              >Imena i Prezimena Dece:</label
+            >
+            <div
+              id="kid1"
+              class="rsvp-form-input-container"
+              style="display: none"
+            >
+              <label>1.</label>
+              <input
+                id="kid1Input"
+                class="rsvp-form-input kids-name-input-1"
+                name="entry.1800873322"
+                type="text"
+              />
+            </div>
+            <div
+              id="kid2"
+              class="rsvp-form-input-container"
+              style="display: none"
+            >
+              <label>2.</label>
+              <input
+                id="kid2Input"
+                class="rsvp-form-input kids-name-input-2"
+                name="entry.867450465"
+                type="text"
+              />
+            </div>
+            <div
+              id="kid3"
+              class="rsvp-form-input-container"
+              style="display: none"
+            >
+              <label>3.</label>
+              <input
+                id="kid3Input"
+                class="rsvp-form-input kids-name-input-3"
+                name="entry.1055618791"
                 type="text"
               />
             </div>
